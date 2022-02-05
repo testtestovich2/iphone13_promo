@@ -82,9 +82,9 @@ iframe {
 */
 
 .container {
-   max-width: 1240px;
-   padding: 0 30px;
+   max-width: 1350px;
    margin: 0 auto;
+   padding: 0 30px;
 }
 
 /*
@@ -92,6 +92,29 @@ iframe {
 это половина от расстояния между блоками
 */
 
-section {
-   padding: 50px 0;
+.main__section {
+   padding: 70px 0;
+}
+
+.btn {
+   cursor: pointer;
+   padding: 18px 23px;
+   background: $blue;
+   color: $white;
+   border: none;
+   border-radius: 30px;
+   transition: all 0.3s;
+   border: 1px solid transparent;
+
+   &:hover {
+      background: $white;
+      color: $blue;
+      border: 1px solid $blue;
+   }
+}
+
+@media (max-width: 800px) {
+   .btn {
+      font-size: 18px;
+   }
 }
