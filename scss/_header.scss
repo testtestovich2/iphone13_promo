@@ -36,6 +36,13 @@
       background-color: $grey;
       margin: 0 25px;
    }
+
+   &__link {
+      opacity: 1;
+      &:hover {
+         opacity: 0.5;
+      }
+   }
 }
 
 @media (max-width: 800px) {
